@@ -2,7 +2,7 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>AMORES DETALLES</title>
+    <title>AMORES DETALLES DEV</title>
 
     <link rel='stylesheet prefetch' href='css/menu.css'>
     <!-- Latest compiled and minified CSS -->
