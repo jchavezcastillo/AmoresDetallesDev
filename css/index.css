@@ -1,0 +1,196 @@
+.ui-view{ display: table; width: 100%; }
+body{ width: 100%; margin: auto; background-color: rgba(197, 195, 195, 0.16); }
+html,body{
+            height: 100%; 
+            margin: 0; 
+            padding: 0; 
+            text-align: center;
+        }
+.menu-header{
+	background: #000000; 
+	padding:0px;
+	display: table;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.menu-header > ul{ 
+   margin: auto;
+   max-width: 1271px;
+   width: 95%;
+   display: table; 
+}
+.menu-option{ text-align: center; width: 50%; }
+.menu-header > ul > li{ float: left; list-style: none; padding-left: 85px; width: 13%; }
+.menu-header > ul > li > a > div, .menu-header > ul > li > div{ 
+   color: #ffffff;
+   cursor: pointer;
+   cursor: hand;
+   font: 14px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+   text-decoration: none;
+}
+.menu-header > ul > li > a{
+   text-decoration: none;	
+}
+.menu-header > ul > li > div.selected{
+	color: #E69317;
+}
+.menu-header > ul > li > div:hover{
+	color: #E69317;
+}
+.icon-logo-home{
+	cursor: pointer;
+	cursor: hand;
+}
+li{
+   list-style: none;
+}
+
+/*HOME*/
+.container-especialidades{
+   width: 80%;
+   margin: auto;
+}
+.container-especialidades > ul > li{
+   margin-left: 200px;
+}
+.container-especialidades > ul{
+    display: table;
+    width: 80%;
+    margin: auto;
+}
+.title-especializado{
+   font: normal normal normal 34px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+   color: #383838;
+   margin: 0;
+   line-height: normal;
+   letter-spacing: normal;
+   width: 100%;
+   max-width: 885px;
+   margin: auto;
+   margin-top: 15px;
+}
+span.list-especializado{
+   font: normal normal normal 18px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+   color: #535353;
+   line-height: 1.6em;
+   font-size: 17px;
+}
+.description-service{
+  width: 100%;
+  max-width: 976px;
+  margin: auto;
+  margin-top: 10px;
+}
+.iframe-slider{
+  width: 100%;
+  border: 0px; 
+  margin-top: 40px; 
+  height: 690px;
+  padding-bottom: 20px;
+}
+.clase-general{
+  display: table-row;
+}
+.selected{
+  text-decoration: underline !important;
+}
+/*FIN, HOME*/
+
+/****************MENÚ DESPLEGABLE MOBILE****/
+.continer-modal{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.701961);
+}
+.options-mobile{
+  background: #ffffff;
+  margin: auto;
+  /*max-width: 300px;*/
+  margin: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.options-mobile li div{
+  cursor: pointer;
+  cursor: hand;
+  text-align: center;
+  color: #666666;
+  max-width: 125px;
+}
+.options-mobile li{
+    padding: 18px;
+    border-top: 1px solid #C0C0C0;
+    max-width: 225px;
+    width: 65%;
+}
+.exit-menu-mobile{
+  color: red;
+  font-size: 25px;
+  background: #ffffff;
+  width: 25px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  height: 25px;
+  text-align: center;
+  margin: 0px 0px -5px 0px;
+  display: table;
+  cursor: pointer;
+  cursor: hand;
+}
+.exit-menu-mobile div{
+  margin-top: 3px;
+}
+.options-mobile li div:hover{
+  color: #2D2A2A;
+  text-decoration:underline;
+}
+.link-movil-click{
+  width: 30%;
+  font-family: sans-serif;
+  margin: auto;
+  text-align: left;
+  cursor: pointer;
+  cursor: hand;
+  color: #666666;
+  padding: 16px 16px 0px 0px;
+  border-top: 1px solid #C0C0C0;
+}
+.link-movil-click > a{
+  text-decoration: none;
+  color: #666666;
+}
+.menu-mobile{
+  width: 20%;
+}
+/*Mobile*/
+/*Para pantallas de 600px de ancho e inferiores*/
+@media screen and (min-width: 292px) and (max-width: 940px) {
+    footer{
+      height: 92px;
+    }
+    .container-banners{
+      display: none;
+    }
+}
+/*Fin del mobile*/
+
+/*PARA PC*/
+/*Para pantallas con mas de 600px de ancho*/
+@media screen and (min-width: 941px){
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  html{
+      font: normal 20px 'Roboto', sans-serif;
+  }
+}
+/*FIN PARA PC*/

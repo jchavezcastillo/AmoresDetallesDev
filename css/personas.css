@@ -1,0 +1,91 @@
+.container-central{
+	width: 60%;
+	margin: auto;
+    margin-top: 30px;
+}
+.title-people{
+	margin: 0;
+    line-height: normal;
+    letter-spacing: normal;
+	font: normal normal normal 34px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    color: #333333;
+}
+.description-people > span{
+	font: normal normal normal 15px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    color: #383838;
+}
+.description-people{
+	padding-bottom: 30px;
+}
+.title-people-second{
+    margin: 0;
+    line-height: normal;
+    letter-spacing: normal;
+    font: normal normal normal 34px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    color: #333333;
+}
+.title-people-second > div{
+	font-size: 22px;
+    line-height: normal;
+    letter-spacing: normal;
+    padding-bottom: 10px;
+}
+.description-people-second > p{
+	font: normal normal normal 16px/1.2 em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    color: #383838;
+    line-height: .8;
+}
+.description-people-second-2 > p{
+    font: normal normal normal 16px/1.2 em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    color: #383838;
+    line-height: .8;
+    margin-left: 20px; margin-top: 3px;
+}
+
+#principal li { 
+   display:inline; 
+   float:left; 
+}
+
+#principal li { 
+   display:inline; 
+   float:left; 
+   max-width: 275px;
+   width: 100%;
+   background-color:#f5f7f9; 
+   padding:5px; 
+   margin:10px; 
+   text-align: center; 
+    moz-box-shadow: 0px 1px 2px #b2b2b2;
+    -webkit-box-shadow: 0px 1px 2px #b2b2b2;
+    box-shadow: 0px 1px 2px #b2b2b2;
+}
+
+#principal > ul{
+    float: left;
+    right: 6%;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+/*Mobile*/
+/*Para pantallas de 600px de ancho e inferiores*/
+@media screen and (min-width: 292px) and (max-width: 940px) {
+    .table-people{
+      width: 100%;
+      text-align: left;
+    }
+}
+/*Fin del mobile*/
+
+/*PARA PC*/
+/*Para pantallas con mas de 600px de ancho*/
+@media screen and (min-width: 941px){
+    .table-people{
+      width: 50%;
+      text-align: left;
+    }
+}
+/*FIN PARA PC*/

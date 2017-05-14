@@ -1,0 +1,98 @@
+
+.container-central{
+	margin: auto;
+    margin-top: 30px;
+}
+.title-contact{
+	margin: 0;
+    line-height: normal;
+    letter-spacing: normal;
+	font: normal normal normal 34px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    color: #333333;
+}
+.description-contact > span{
+	font: normal normal normal 15px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    color: #383838;
+}
+.description-contact{
+	padding-bottom: 10px;
+}
+.title-contact-second{
+    margin: 0;
+    line-height: normal;
+    letter-spacing: normal;
+    font: normal normal normal 34px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    color: #333333;
+}
+.title-contact-second > div{
+	font-size: 22px;
+    line-height: normal;
+    letter-spacing: normal;
+    padding-bottom: 10px;
+}
+.description-contact-second > p{
+	font: normal normal normal 16px/1.2 em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    color: #383838;
+    line-height: .8;
+}
+.description-contact-second-2 > p{
+    font: normal normal normal 16px/1.2 em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    color: #383838;
+    line-height: .8;
+    margin-left: 20px; margin-top: 3px;
+}
+.input-contact{
+	font: normal normal normal 15px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid rgba(230, 147, 23, 1);
+    color: #383838;
+    margin: 0 0 5px;
+    width: 75%;
+    margin-left: 20px;
+    background-color: rgb(245, 245, 245);
+    padding: 0 2.5em 0 0.5em;
+}
+.input-height-35{
+	    height: 35px;
+}
+.buttom-contact-send{
+	background-color: rgba(230, 147, 23, 1);
+    font: normal normal normal 18px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+    border: 0;
+    color: #FAFAFA;
+    cursor: pointer;
+    float: right;
+    margin: 0;
+    border-radius: 0;
+    padding: 5px;
+}
+
+/*Mobile*/
+/*Para pantallas de 600px de ancho e inferiores*/
+@media screen and (min-width: 292px) and (max-width: 940px) {
+    .table-contact{
+      width: 100%;
+      text-align: left;
+    }
+    .container-central{
+        width: 90%;
+    }
+    .description-contact-second{ display: none; }
+    .input-contact{ width: 90% !important; }
+    .description-contact-second-2 > p{ width: 90% !important; }
+}
+/*Fin del mobile*/
+
+/*PARA PC*/
+/*Para pantallas con mas de 600px de ancho*/
+@media screen and (min-width: 941px){
+    .table-contact{
+      width: 50%;
+      text-align: left;
+    }
+    .container-central{
+        width: 60%;
+    }
+}
+/*FIN PARA PC*/
