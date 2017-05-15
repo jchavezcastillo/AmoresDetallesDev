@@ -1,0 +1,29 @@
+body{
+  background: #dedddd;
+}
+.redondeo
+{
+  webkit-border-radius: 0px 0px 100px 100px;
+  -moz-border-radius: 0px 0px 100px 100px;
+  border-radius: 0px 0px 100px 100px;
+  moz-box-shadow: 0px 0px 7px #000000;
+  -webkit-box-shadow: 0px 0px 7px #000000;
+  box-shadow: 0px 0px 7px #000000;
+}
+
+.red{ background: red; }
+
+.blue{ background: #222261; }
+
+.white{ background: #ffffff; }
+
+.cortinilla > div
+{
+  float: left;
+  height: 150px;
+}
+
+.container.first{
+  background: #ffffff;
+}
+

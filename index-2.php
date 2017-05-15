@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Amores Detalles</title>
 
     <!-- Bootstrap -->
     <link href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,51 +22,38 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <link href="css/amoresdetalles.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+
   </head>
 
   <body>
+    
+    <!--Header de la página (cortina)-->
+    <?php include("/templates/header.php"); ?>
 
-    <style type="text/css">
-      .redondeo
-      {
-        webkit-border-radius: 0px 0px 58px 58px;
-        -moz-border-radius: 0px 0px 58px 58px;
-        border-radius: 0px 0px 58px 58px;
+    <!--Contenedor principal-->
+    <div class="container first">
 
-        moz-box-shadow: 0px 0px 7px #000000;
-        -webkit-box-shadow: 0px 0px 7px #000000;
-        box-shadow: 0px 0px 7px #000000;
-      }
-      .blue
-      {
-        background: #222261;
-      }
-      .white
-      {
-        background: #ffffff;
-      }
-      .cortinilla > div
-      {
-        float: left;
-        height: 150px;
-       
-      }
-    </style>
+      <div class="row-first row">
 
-    <div class="row center-block cortinilla">
-      <div class="col-md-1 col-md-push-1 col-sm-1 blue redondeo"></div>
-      <div class="col-md-1 col-md-pull-1 col-sm-1 white redondeo"></div>
-      <div class="col-md-1 col-md-push-1 col-sm-1 blue redondeo"></div>
-      <div class="col-md-1 col-md-pull-1 col-sm-1 white redondeo"></div>
-      <div class="col-md-1 col-md-push-1 col-sm-1 blue redondeo"></div>
-      <div class="col-md-1 col-md-pull-1 col-sm-1 white redondeo"></div>
-      <div class="col-md-1 col-md-push-1 col-sm-1 blue redondeo"></div>
-      <div class="col-md-1 col-md-pull-1 col-sm-1 white redondeo"></div>
-      <div class="col-md-1 col-md-push-1 col-sm-1 blue redondeo"></div>
-      <div class="col-md-1 col-md-pull-1 col-sm-1 white redondeo"></div>
-      <div class="col-md-1 col-md-push-1 col-sm-1 blue redondeo"></div>
-      <div class="col-md-1 col-md-pull-1 col-sm-1 white redondeo"></div>
+        <!--Menú de navegación col-md-offset-1 mover a la derecha-->
+        <section class="menu col-xs-12 col-sm-12 col-md-3 col-md-lg-3">
+          <?php include("/templates/menu.html"); ?>          
+        </section>
+
+        <!--Galería-->
+        <section class="galery red col-xs-12 col-sm-12 col-md-9 col-md-lg-9">
+          <div class=""></div>
+        </section>
+
+      </div>
+      
     </div>
+
+
+
 
   </body>
 </html>
