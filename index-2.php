@@ -1,4 +1,3 @@
-
 <!--MAQUETACIÓN http://getbootstrap.com/components/-->
 <!DOCTYPE html>
 <html lang="en">
@@ -25,34 +24,61 @@
 
     <link href="css/amoresdetalles.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
+    <link href="css/galery.css" rel="stylesheet">
 
   </head>
 
   <body>
     
     <!--Header de la página (cortina)-->
-    <?php include("/templates/header.php"); ?>
+    <?php include("templates/header.php"); ?>
 
     <!--Contenedor principal-->
-    <div class="container first">
+    <div class="container first redondeo-5px">
 
-      <div class="row-first row">
+        <!--Primera fila-->
+        <div class="row-first row">
 
-        <!--Menú de navegación col-md-offset-1 mover a la derecha-->
-        <section class="menu col-xs-12 col-sm-12 col-md-3 col-md-lg-3">
-          <?php include("/templates/menu.html"); ?>          
-        </section>
+          <!--Menú de navegación col-md-offset-1 mover a la derecha-->
+          <section class="menu col-xs-12 col-sm-12 col-md-1 col-md-lg-1">
+            <?php include("templates/menu.html"); ?>          
+          </section>
 
-        <!--Galería-->
-        <section class="galery red col-xs-12 col-sm-12 col-md-9 col-md-lg-9">
-          <div class=""></div>
-        </section>
+          <!--Galería-->
+          <section class="galery col-xs-12 col-sm-12 col-md-9 col-md-lg-9 col-md-offset-1">
+            <?php include("templates/galery.php"); ?>      
+          </section>
 
-      </div>
-      
+        </div>
+        <!--Fin, primera fila-->
+
+        <!--Primera fila (Lo más vendido)-->
+        <div class="row container-fluid">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-md-lg-12 bg-primary"> <h1 class="text-center section-title">Lo más vendido</h1> </div>
+        </div>
+
+        <!--Lo más vendido contenido-->
+        <div class="container row margin-top-10">
+          <?php  include("templates/the-most-sold.php"); ?>
+        </div>
+
+
+        <!--Primera fila (la creatividad nos mueve)-->
+        <div class="row container-fluid" style="background:#d89316;color:#ffffff;">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-md-lg-12"> <h1 class="text-center section-title">¡La creatividad nos mueve!</h1> </div>
+        </div>
+
+        <!--Nos mueve la creatividad contenido-->
+        <div class="container row margin-top-10">
+          <?php  include("templates/creative.php"); ?>
+        </div>
     </div>
+    <!--Fin contenedor principal-->
 
-
+    <!--Footer-->
+    <footer class="container-fluid" style="background:#272727;">
+      <?php  include("templates/footer.php"); ?>
+    </footer>
 
 
   </body>
